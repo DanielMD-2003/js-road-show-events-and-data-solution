@@ -23,8 +23,16 @@
    /* LØSNING: billedstørrelser (px) */
    --sun-size: 100px; /* solens bredde og højde */
    --car-w: 200px;    /* bilernes bredde */
+   --bus-w: 260px; /* bussen og truck'ens størrelse*/
+
+}
+.truck {
+   width: var(--bus-w);
 }
 
+.bus {
+   width: var(--bus-w)
+}
 /* ---------------------------------------------------------
    Global reset
 --------------------------------------------------------- */
@@ -116,7 +124,9 @@
 --------------------------------------------------------- */
 .car1,
 .car2,
-.car3 {
+.car3,
+.bus,
+.truck {
    position: absolute;
    width: var(--car-w);
    max-width: 28vw;
@@ -171,6 +181,24 @@
    100% { transform: translateX(130vw) rotateY(180deg); }
 }
 
+.bus {
+   bottom: 2.8vh;
+   right: -30vw;
+   width: var(--bus-w);
+   animation: bus 20s linear infinite;
+}
+
+@keyframes bus {
+   0%   { transform: translateX(0) rotateY(180deg); }
+   100% { transform: translateX(-130vw) rotateY(180deg); }
+}
+
+.truck {
+   bottom: -3.4vh;
+   right: -30vw;
+   width: var(--bus-w);
+   animation: bus 14s linear infinite;
+}
 /* ---------------------------------------------------------
    Tooltip (bilens informationer)
 --------------------------------------------------------- */

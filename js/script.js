@@ -35,7 +35,26 @@ const cars = [
         color: "Lyseblå",
         fuel: "Diesel",
         sound: "sound/blue-car-sound.wav"
+    },
+    {
+        id: "bus",
+        brand: "Solaris",
+        model: "stingy",
+        year: 2026,
+        color: "yellow",
+        fuel: "hybrid",
+        sound: "sound/bus-sound.wav"
+    },
+    {
+        id: "truck",
+        brand: "ford",
+        model: "ford transit",
+        year: 2020,
+        color: "orange",
+        fuel: "diesel",
+        sound: "sound/truck-sound.wav"
     }
+
 ];
 
 // Test af arrayet i konsollen
